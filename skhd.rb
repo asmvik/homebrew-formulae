@@ -1,9 +1,9 @@
 class Skhd < Formula
   desc "Simple hotkey-daemon for macOS."
-  homepage "https://github.com/koekeishiya/skhd"
-  url "https://github.com/koekeishiya/skhd/archive/v0.3.9.zip"
+  homepage "https://github.com/asmvik/skhd"
+  url "https://github.com/asmvik/skhd/archive/v0.3.9.zip"
   sha256 "3832df8b3a7156f2a3d512c6fae8b4cb8bbd2b8a484ab672508788a2c46b72a2"
-  head "https://github.com/koekeishiya/skhd.git"
+  head "https://github.com/asmvik/skhd.git"
 
   def install
     ENV.deparallelize

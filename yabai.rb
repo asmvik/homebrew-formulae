@@ -1,9 +1,9 @@
 class Yabai < Formula
   desc "A tiling window manager for macOS based on binary space partitioning."
-  homepage "https://github.com/koekeishiya/yabai"
-  url "https://github.com/koekeishiya/yabai/releases/download/v7.1.16/yabai-v7.1.16.tar.gz"
+  homepage "https://github.com/asmvik/yabai"
+  url "https://github.com/asmvik/yabai/releases/download/v7.1.16/yabai-v7.1.16.tar.gz"
   sha256 "c4d5e31ad18afc8b46aa4cdaf5639088f044c72b3852787e9633db12d31a606b"
-  head "https://github.com/koekeishiya/yabai.git"
+  head "https://github.com/asmvik/yabai.git"
 
   depends_on :macos => :big_sur
 
@@ -38,7 +38,7 @@ class Yabai < Formula
     Build the configuration row by running:
       echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(\which yabai) | cut -d " " -f 1) $(\which yabai) --load-sa"
 
-    README: https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
+    README: https://github.com/asmvik/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
     EOS
   end
 
