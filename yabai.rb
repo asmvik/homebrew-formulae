@@ -33,10 +33,7 @@ class Yabai < Formula
       /tmp/yabai_<user>.[out|err].log
 
     If you are using the scripting-addition; remember to update your sudoers file:
-      sudo visudo -f /private/etc/sudoers.d/yabai
-
-    Build the configuration row by running:
-      echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(\which yabai) | cut -d " " -f 1) $(\which yabai) --load-sa"
+      echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(command which yabai) | cut -d ' ' -f 1) $(command which yabai) --load-sa" | sudo tee /etc/sudoers.d/yabai
 
     README: https://github.com/asmvik/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
     EOS
